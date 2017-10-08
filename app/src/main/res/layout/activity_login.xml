@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.fiap.appjobcomb.LoginActivity">
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:hint="Nome de Usuário"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Senha (apenas números)"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:background="@color/colorWhite"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logar"
+        android:layout_gravity="center"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorApoioDois"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnLogar"
+        android:onClick="logar"
+        />
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Primeiro Acesso"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorApoioDois"
+        android:layout_marginTop="20dp"
+
+        />
+
+</LinearLayout>

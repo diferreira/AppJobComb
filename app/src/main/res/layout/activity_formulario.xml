@@ -1,0 +1,76 @@
+
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <EditText
+            android:hint="Nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_nome"/>
+
+        <EditText
+            android:hint="Sobrenome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_sobrenome"/>
+
+        <EditText
+            android:hint="Cidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_cidade" />
+
+        <EditText
+            android:hint="Pais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_pais"/>
+
+        <EditText
+            android:hint="Usuario Git"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_nome_git"/>
+
+        <EditText
+            android:hint="Usuario Linkedin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_nome_linkedin"/>
+
+        <EditText
+            android:hint="Site"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_site"/>
+
+        <EditText
+            android:hint="sexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_sexo"/>
+
+        <EditText
+            android:hint="Data de Nscimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_data_nascimento"/>
+
+        <EditText
+            android:hint="Data de Cadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_data_cadastro"/>
+
+    </LinearLayout>
+
+</ScrollView>
