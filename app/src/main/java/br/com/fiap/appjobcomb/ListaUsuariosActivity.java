@@ -69,12 +69,24 @@ public class ListaUsuariosActivity extends AppCompatActivity {
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, final ContextMenu.ContextMenuInfo menuInfo) {
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
+        final Usuario usuario = (Usuario) listaUsuarios.getItemAtPosition(info.position);
+
+        MenuItem itemGit = menu.add("Ir pro Git");
+        itemGit.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                Intent intentiGit = new Intent(ListaUsuariosActivity.this, GitActivity.class);
+                startActivity(intentiGit);
+                return false;
+            }
+        });
+
         MenuItem deletar = menu.add("Deletar");
         deletar.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
-                Usuario usuario = (Usuario) listaUsuarios.getItemAtPosition(info.position);
+
 
                 UsuarioDAO dao = new UsuarioDAO(ListaUsuariosActivity.this);
                 dao.deleta(usuario);
