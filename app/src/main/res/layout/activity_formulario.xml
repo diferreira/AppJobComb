@@ -71,6 +71,12 @@
             android:layout_height="wrap_content"
             android:id="@+id/formulario_data_cadastro"/>
 
+        <EditText
+            android:hint="senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/formulario_senha"/>
+
     </LinearLayout>
 
 </ScrollView>

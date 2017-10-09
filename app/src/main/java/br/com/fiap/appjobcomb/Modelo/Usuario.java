@@ -19,6 +19,7 @@ public class Usuario implements Serializable {
     private String sexo;
     private String dataNascimento;
     private String dataCadastro;
+    private String senha;
 
 
     public Long getId() {
@@ -107,6 +108,14 @@ public class Usuario implements Serializable {
 
     public void setDataCadastro(String dataCadastro) {
         this.dataCadastro = dataCadastro;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     @Override

@@ -20,6 +20,7 @@ public class FormularioHelper {
     private EditText campoSexo;
     private EditText campoDataNascimento;
     private EditText campoDataCadastro;
+    private EditText campoSenha;
     private Usuario usuario;
 
     public FormularioHelper(FormularioActivity activity) {
@@ -33,6 +34,7 @@ public class FormularioHelper {
         this.campoSexo = (EditText) activity.findViewById(R.id.formulario_sexo);
         this.campoDataNascimento = (EditText) activity.findViewById(R.id.formulario_data_nascimento);
         this.campoDataCadastro = (EditText) activity.findViewById(R.id.formulario_data_cadastro);
+        this.campoSenha = activity.findViewById(R.id.formulario_senha);
         usuario = new Usuario();
     }
 
@@ -47,6 +49,7 @@ public class FormularioHelper {
         usuario.setSexo(campoSexo.getText().toString());
         usuario.setDataNascimento(campoDataNascimento.getText().toString());
         usuario.setDataCadastro(campoDataCadastro.getText().toString());
+        usuario.setSenha(campoSenha.getText().toString());
         return usuario;
 
     }
@@ -61,6 +64,7 @@ public class FormularioHelper {
         campoSexo.setText(usuario.getSexo());
         campoDataNascimento.setText(usuario.getDataNascimento());
         campoDataCadastro.setText(usuario.getDataCadastro());
+        campoSenha.setText(usuario.getSenha());
         this.usuario = usuario;
     }
 
