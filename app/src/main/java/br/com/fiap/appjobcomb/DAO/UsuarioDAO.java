@@ -19,11 +19,12 @@ import br.com.fiap.appjobcomb.Modelo.Usuario;
 public class UsuarioDAO extends SQLiteOpenHelper{
 
     public UsuarioDAO(Context context){
-        super(context, "Jobcomb", null, 1);}
+        super(context, "JobComb", null, 2);
+    }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "CREATE TABLE Usuarios (id INTEGER PRIMARY KEY, nome TEXT NOT NULL, sobrenome TEXT, cidade TEXT, pais TEXT, nomeGit TEXT, nomeLinkedin TEXT, site TEXT, sexo TEXT, dataNascimento TEXT, dataCadastro TEXT)";
+        String sql = "CREATE TABLE Usuarios (id INTEGER PRIMARY KEY, nome TEXT NOT NULL, sobrenome TEXT, cidade TEXT, pais TEXT, nomeGit TEXT, nomeLinkedin TEXT, site TEXT, sexo TEXT, dataNascimento TEXT, dataCadastro TEXT, senha TEXT)";
         db.execSQL(sql);
     }
 
@@ -38,7 +39,8 @@ public class UsuarioDAO extends SQLiteOpenHelper{
         SQLiteDatabase db = getWritableDatabase();
 
         ContentValues dados = pegaDadosUsuario(usuario);
-        db.insert("Usuario", null, dados);
+
+        db.insert("Usuarios", null, dados);
     }
 
     public List<Usuario> buscaUsuario(){
@@ -54,12 +56,13 @@ public class UsuarioDAO extends SQLiteOpenHelper{
             usuario.setSobrenome(c.getString(c.getColumnIndex("sobrenome")));
             usuario.setCidade(c.getString(c.getColumnIndex("cidade")));
             usuario.setPais(c.getString(c.getColumnIndex("pais")));
-            usuario.setNomeGit(c.getString(c.getColumnIndex("nomeGIt")));
+            usuario.setNomeGit(c.getString(c.getColumnIndex("nomeGit")));
             usuario.setNomeLinkedin(c.getString(c.getColumnIndex("nomeLinkedin")));
             usuario.setSite(c.getString(c.getColumnIndex("site")));
             usuario.setSexo(c.getString(c.getColumnIndex("sexo")));
             usuario.setDataNascimento(c.getString(c.getColumnIndex("dataNascimento")));
             usuario.setDataCadastro(c.getString(c.getColumnIndex("dataCadastro")));
+            usuario.setSenha(c.getString(c.getColumnIndex("senha")));
             usuarios.add(usuario);
         }
 
@@ -96,6 +99,7 @@ public class UsuarioDAO extends SQLiteOpenHelper{
         dados.put("sexo", usuario.getSexo());
         dados.put("dataNascimento", usuario.getDataNascimento());
         dados.put("dataCadastro", usuario.getDataCadastro());
+        dados.put("senha", usuario.getSenha());
         return dados;
 
     }
