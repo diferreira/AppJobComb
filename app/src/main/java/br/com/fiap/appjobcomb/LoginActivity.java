@@ -17,8 +17,15 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void logar(View v){
-        Intent intentLista = new Intent(this, ListaUsuariosActivity.class);
-        startActivity(intentLista);
+        Intent intentHome = new Intent(this, PrincipalActivity.class);
+        startActivity(intentHome);
+
+    }
+
+    public void primeiroAcesso(View v){
+        Intent intentPrimeiroAcesso = new Intent(this, FormularioActivity.class);
+        startActivity(intentPrimeiroAcesso);
+
 
     }
 

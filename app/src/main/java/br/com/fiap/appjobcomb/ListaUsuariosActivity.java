@@ -1,6 +1,7 @@
 package br.com.fiap.appjobcomb;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -72,12 +73,21 @@ public class ListaUsuariosActivity extends AppCompatActivity {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
         final Usuario usuario = (Usuario) listaUsuarios.getItemAtPosition(info.position);
 
-        MenuItem itemGit = menu.add("Ir pro Git");
+        final MenuItem itemGit = menu.add("Ir pro Git");
         itemGit.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                Intent intentiGit = new Intent(ListaUsuariosActivity.this, GitActivity.class);
-                startActivity(intentiGit);
+                Intent intentGit = new Intent(Intent.ACTION_VIEW);
+
+                String git = usuario.getNomeGit();
+                if (!git.startsWith("http://")) {
+                    git = "http://github.com/" + git;
+                }
+
+                intentGit.setData(Uri.parse(git));
+                itemGit.setIntent(intentGit);
+
+                startActivity(intentGit);
                 return false;
             }
         });

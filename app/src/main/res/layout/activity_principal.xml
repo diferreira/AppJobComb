@@ -1,0 +1,180 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jobcomb"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Bem-vindo à JobComb"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="A MANEIRA PERFEITA DE GANHAR EXPERIÊNCIA"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ambev" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Desafio AMBEV"
+            android:textSize="35dp" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="São Paulo, dezembro de 2017 – A Ambev anunciara na sexta-feira (22), em Florianópolis, na Conferência Mundial de Empresas Juniores 2016 (JEWC 2017),os três finalistas do Desafio Ambev."
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inscreva-se"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:background="#cac9c9"
+            android:layout_width = "fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/fiap"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Desafio FIAP"
+            android:textSize="35dp"
+            />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="São Paulo, outubro de 2017 – A FIAP anunciara na sexta-feira (22), em Florianópolis, na Conferência Mundial de AM's 2017."
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inscreva-se"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:background="#cac9c9"
+            android:layout_width = "fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/hack"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Vocês sabem o que são?!?"
+            android:textSize="35dp" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Hackathon (palavra-valise inglesa, formada pelos vocábulos to hack, 'fatiar', 'quebrar', 'alterar ou ter acesso a um arquivo ou rede', e marathon, maratona)"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:background="#cac9c9"
+            android:layout_width = "fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</ScrollView>
+
+
