@@ -75,7 +75,8 @@
             android:hint="senha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/formulario_senha"/>
+            android:id="@+id/formulario_senha"
+            android:inputType="numberPassword"/>
 
     </LinearLayout>
 

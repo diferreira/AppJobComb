@@ -34,7 +34,7 @@ public class FormularioHelper {
         this.campoSexo = (EditText) activity.findViewById(R.id.formulario_sexo);
         this.campoDataNascimento = (EditText) activity.findViewById(R.id.formulario_data_nascimento);
         this.campoDataCadastro = (EditText) activity.findViewById(R.id.formulario_data_cadastro);
-        this.campoSenha = activity.findViewById(R.id.formulario_senha);
+        this.campoSenha = (EditText) activity.findViewById(R.id.formulario_senha);
         usuario = new Usuario();
     }
 
