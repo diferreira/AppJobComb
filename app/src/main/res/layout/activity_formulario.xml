@@ -60,16 +60,18 @@
             android:id="@+id/formulario_sexo"/>
 
         <EditText
-            android:hint="Data de Nscimento"
+            android:hint="Data de Nascimento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/formulario_data_nascimento"/>
+            android:id="@+id/formulario_data_nascimento"
+            android:inputType="date"/>
 
         <EditText
             android:hint="Data de Cadastro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/formulario_data_cadastro"/>
+            android:id="@+id/formulario_data_cadastro"
+            android:inputType="date"/>
 
         <EditText
             android:hint="senha"
