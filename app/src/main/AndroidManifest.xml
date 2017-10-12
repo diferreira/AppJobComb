@@ -25,7 +25,6 @@
         </activity>
         <activity android:name=".ListaUsuariosActivity" />
         <activity android:name=".FormularioActivity" />
-        <activity android:name=".GitActivity" />
         <activity android:name=".PrincipalActivity"></activity>
     </application>
 
