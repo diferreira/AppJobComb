@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void logar(View v){
-        Intent intentHome = new Intent(this, PrincipalActivity.class);
+        Intent intentHome = new Intent(this, ListaUsuariosActivity.class);
         startActivity(intentHome);
 
     }

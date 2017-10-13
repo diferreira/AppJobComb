@@ -77,6 +77,7 @@ public class ListaUsuariosActivity extends AppCompatActivity {
         itemGit.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
+
                 Intent intentGit = new Intent(Intent.ACTION_VIEW);
 
                 String git = usuario.getNomeGit();

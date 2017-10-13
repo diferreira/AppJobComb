@@ -12,6 +12,8 @@ import java.util.List;
 
 import br.com.fiap.appjobcomb.Modelo.Usuario;
 
+import static android.icu.text.MessagePattern.ArgType.SELECT;
+
 /**
  * Created by Diego Ferreira on 08/10/2017.
  */
@@ -44,7 +46,9 @@ public class UsuarioDAO extends SQLiteOpenHelper{
     }
 
     public List<Usuario> buscaUsuario(){
-        String sql = "SELECT * FROM Usuarios order by nome;";
+        String sql = "SELECT * FROM Usuarios ORDER BY id DESC;";
+        //String sql = "SELECT * FROM Usuarios LIMIT 1 order by id DESC;";
+
         SQLiteDatabase db = getReadableDatabase();
         Cursor c = db.rawQuery(sql, null);
 
