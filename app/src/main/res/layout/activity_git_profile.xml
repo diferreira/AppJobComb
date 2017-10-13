@@ -43,7 +43,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DESAFIOS"
+            android:text="@string/desafios"
             android:onClick="vaiParaDesafios"
             android:layout_alignParentRight="true"/>
 
@@ -84,7 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
-            android:text="Usuário Git:"
+            android:text="@string/usuario_git_"
             android:textSize="16sp"
             android:layout_below="@+id/tvCompany"
             android:layout_toEndOf="@+id/tvLabelGitProfileLink" />
@@ -96,7 +96,7 @@
             android:layout_below="@id/tvLogin"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="16dp"
-            android:text="BIO:"
+            android:text="@string/bio"
             android:textSize="16sp"
             android:textStyle="bold"/>
 
@@ -119,7 +119,7 @@
             android:layout_below="@id/tvBio"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="8dp"
-            android:text="Atividades GitHub"
+            android:text="@string/atividades_github"
             android:textAllCaps="true"
             android:textSize="16sp"
             android:textStyle="bold"/>
@@ -131,7 +131,7 @@
             android:layout_below="@id/tvLabelAtividadesGit"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="8dp"
-            android:text="Repositórios Públicos: "
+            android:text="@string/reposit_rios_p_blicos"
             android:textSize="14sp"
             android:textStyle="bold"/>
 
@@ -154,7 +154,7 @@
             android:layout_below="@id/tvLabelPublicRepos"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="8dp"
-            android:text="Gists Públicos: "
+            android:text="@string/gists_p_blicos"
             android:textSize="14sp"
             android:textStyle="bold"/>
 
@@ -177,7 +177,7 @@
             android:layout_below="@id/tvLabelPublicGists"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="8dp"
-            android:text="Seguidores: "
+            android:text="@string/seguidores"
             android:textSize="14sp"
             android:textStyle="bold"/>
 
@@ -200,7 +200,7 @@
             android:layout_below="@id/tvFollowersLabel"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="8dp"
-            android:text="Seguindo: "
+            android:text="@string/seguindo"
             android:textSize="14sp"
             android:textStyle="bold"/>
 
@@ -223,7 +223,7 @@
             android:layout_below="@id/tvFolloingNumber"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
-            android:text="Ver Repositórios"/>
+            android:text="@string/ver_reposit_rios"/>
 
         <TextView
             android:id="@+id/tvLabelGitProfileLink"
@@ -232,7 +232,7 @@
             android:layout_below="@id/btn_ver_repos"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="8dp"
-            android:text="Perfil GitHub: "
+            android:text="@string/perfil_github"
             android:textSize="16sp"
             android:textStyle="bold"/>
 
@@ -279,7 +279,7 @@
             android:layout_below="@+id/tvFolloingNumber"
             android:layout_marginRight="8dp"
             android:layout_marginTop="20dp"
-            android:text="Disconectado!"
+            android:text="@string/disconectado"
             android:textColor="@color/colorAccent"
             android:textSize="20dp"
             android:textStyle="bold"

@@ -31,19 +31,19 @@
             android:id="@+id/formulario_cidade" />
 
         <EditText
-            android:hint="Pais"
+            android:hint="@string/pais"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/formulario_pais"/>
 
         <EditText
-            android:hint="Usuario Git"
+            android:hint="@string/usuario_git"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/formulario_nome_git"/>
 
         <EditText
-            android:hint="Usuario Linkedin"
+            android:hint="@string/usuario_linkedin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/formulario_nome_linkedin"/>
@@ -55,27 +55,27 @@
             android:id="@+id/formulario_site"/>
 
         <EditText
-            android:hint="sexo"
+            android:hint="@string/sexo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/formulario_sexo"/>
 
         <EditText
-            android:hint="Data de Nascimento"
+            android:hint="@string/data_de_nascimento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/formulario_data_nascimento"
             android:inputType="date"/>
 
         <EditText
-            android:hint="Data de Cadastro"
+            android:hint="@string/data_de_cadastro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/formulario_data_cadastro"
             android:inputType="date"/>
 
         <EditText
-            android:hint="senha"
+            android:hint="@string/senha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/formulario_senha"
