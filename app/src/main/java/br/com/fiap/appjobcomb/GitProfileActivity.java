@@ -36,7 +36,7 @@ public class GitProfileActivity extends AppCompatActivity {
 
         // Loading animation...
         pd = new ProgressDialog(this);
-        pd.setMessage("Atualizando...");
+        pd.setMessage(getString(R.string.atualizando));
         pd.setCancelable(false);
         pd.show();
 

@@ -73,18 +73,18 @@ public class ListaUsuariosActivity extends AppCompatActivity {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
         final Usuario usuario = (Usuario) listaUsuarios.getItemAtPosition(info.position);
 
-        final MenuItem itemGit = menu.add("Ir pro Git");
+        final MenuItem itemGit = menu.add(R.string.ir_para_git);
+
         itemGit.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
 
-                Intent intentGit = new Intent(Intent.ACTION_VIEW);
 
+                Intent intentGit = new Intent(Intent.ACTION_VIEW);
                 String git = usuario.getNomeGit();
                 if (!git.startsWith("http://")) {
                     git = "http://github.com/" + git;
                 }
-
                 intentGit.setData(Uri.parse(git));
                 itemGit.setIntent(intentGit);
 
@@ -93,7 +93,8 @@ public class ListaUsuariosActivity extends AppCompatActivity {
             }
         });
 
-        MenuItem deletar = menu.add("Deletar");
+
+        MenuItem deletar = menu.add(R.string.deletar);
         deletar.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {

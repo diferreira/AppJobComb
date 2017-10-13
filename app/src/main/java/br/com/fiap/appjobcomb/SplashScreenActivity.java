@@ -10,8 +10,10 @@ public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Carrega o xml do Slash Screeen Activity
         setContentView(R.layout.activity_splash_screen);
 
+        // Executa o Splash e chama a tela de login apos o delay de 1200
         Handler handle = new Handler();
         handle.postDelayed(new Runnable() {
             @Override
@@ -24,8 +26,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     private void chamarLogin() {
 
-        Intent intent = new Intent(this, ListaUsuariosActivity.class);
-        //Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
         finish();
     }

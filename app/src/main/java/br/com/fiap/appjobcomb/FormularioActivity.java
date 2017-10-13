@@ -44,10 +44,10 @@ public class FormularioActivity extends AppCompatActivity {
                UsuarioDAO dao = new UsuarioDAO(this);
                if(usuario.getId() != null){
                    dao.altera(usuario);
-                   Toast.makeText(FormularioActivity.this, "Usuario " + usuario.getNome() + " alterado", Toast.LENGTH_SHORT).show();
+                   Toast.makeText(FormularioActivity.this, getString(R.string.usuario) + usuario.getNome() + getString(R.string.alterado), Toast.LENGTH_SHORT).show();
                } else {
                    dao.insere(usuario);
-                   Toast.makeText(FormularioActivity.this, "Usuario " + usuario.getNome() + " salvo", Toast.LENGTH_SHORT).show();
+                   Toast.makeText(FormularioActivity.this, getString(R.string.usuario) + usuario.getNome() + getString(R.string.salvo), Toast.LENGTH_SHORT).show();
                }
 
                dao.close();
