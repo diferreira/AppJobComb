@@ -2,10 +2,10 @@
     <string name="app_name">JobComb</string>
     <string name="usuario">Usuario</string>
     <string name="alterado">alterado</string>
-    <string name="salvo">salvo</string>
+    <string name="salvo">Salvo</string>
     <string name="atualizando">Atualizando...</string>
     <string name="deletar">Deletar</string>
-    <string name="ir_para_git">Ir pro Git</string>
+    <string name="ir_para_git">Ir pro GitHub</string>
     <string name="nome">Nome</string>
     <string name="sobrenome">Sobrenome</string>
     <string name="cidade">Cidade</string>

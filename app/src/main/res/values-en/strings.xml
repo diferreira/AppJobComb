@@ -1,4 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">JobComb</string>
+    <string name="alterado">Changed</string>
+    <string name="atividades_github">GitHub Activities</string>
+    <string name="atualizando">Updating...</string>
+    <string name="bem_vindo_jobcomb">Welcome to JobComb</string>
+    <string name="bio">BIO:</string>
+    <string name="cidade">City</string>
+    <string name="compartilhe">Share</string>
+    <string name="data_de_cadastro">Registration date</string>
+    <string name="data_de_nascimento">Data of Birth</string>
+    <string name="deletar">Delete</string>
+    <string name="desafios">Challenges</string>
+    <string name="disconectado">Disconnected!</string>
+    <string name="gists_p_blicos">Public Gists</string>
+    <string name="inscreva_se">Sign up</string>
+    <string name="ir_para_git">Go to GitHub</string>
+    <string name="logar">Login</string>
+    <string name="nome">Name</string>
+    <string name="nome_de_usu_rio">Username</string>
+    <string name="pais">Country</string>
+    <string name="perfil_github">GitHub Profile</string>
+    <string name="primeiro_acesso">First Access</string>
+    <string name="reposit_rios_p_blicos">Public Repositories</string>
+    <string name="salvo">Saved</string>
+    <string name="seguidores">Followers</string>
+    <string name="seguindo">Following</string>
+    <string name="senha">Password</string>
+    <string name="sexo">Gender</string>
+    <string name="sobrenome">Surname</string>
+    <string name="usuario">User</string>
+    <string name="usuario_git">GitHub User</string>
+    <string name="usuario_git_">GitHub User:</string>
+    <string name="usuario_linkedin">Linkedin User</string>
+    <string name="ver_reposit_rios">See Repositories</string>
+    <string name="a_maneira_perfeita_de_ganhar_experi_ncia">THE BEST WAY DO EARN EXPERIENCE</string>
 </resources>
