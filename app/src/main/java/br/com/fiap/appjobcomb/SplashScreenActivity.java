@@ -26,7 +26,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     private void chamarLogin() {
 
-        Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, PrincipalActivity.class);
         startActivity(intent);
         finish();
     }

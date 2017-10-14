@@ -70,8 +70,6 @@ public class GitProfileActivity extends AppCompatActivity {
                 public void onResponse(Call<GitProfile> call, Response<GitProfile> response) {
 
                     GitProfile profile = response.body();
-                    //Toast.makeText(GitProfileActivity.this, profile.toString(), Toast.LENGTH_SHORT).show();
-
 
                     Name.setText(profile.getName());
                     Login.setText(profile.getLogin());
@@ -113,8 +111,8 @@ public class GitProfileActivity extends AppCompatActivity {
     }
 
     public void vaiParaDesafios(View v){
-        Intent goDasefios = new Intent(this, PrincipalActivity.class);
-        startActivity(goDasefios);
+        Intent goParaDesafios = new Intent(this, PrincipalActivity.class);
+        startActivity(goParaDesafios);
 
     }
 

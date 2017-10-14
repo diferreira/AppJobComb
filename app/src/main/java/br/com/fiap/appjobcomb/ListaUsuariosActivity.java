@@ -73,38 +73,20 @@ public class ListaUsuariosActivity extends AppCompatActivity {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
         final Usuario usuario = (Usuario) listaUsuarios.getItemAtPosition(info.position);
 
-        final MenuItem itemGit = menu.add(R.string.ir_para_git);
-
+        final MenuItem itemGit = menu.add("Ir pro Git");
         itemGit.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
+                Intent intentGit = new Intent(ListaUsuariosActivity.this, GitProfileActivity.class);
 
+                ///String git = usuario.getNomeGit();
+                //if (!git.startsWith("http://")) {
+                // git = "http://github.com/" + git;
+                //}
 
-                Intent intentGit = new Intent(Intent.ACTION_VIEW);
-                String git = usuario.getNomeGit();
-                if (!git.startsWith("http://")) {
-                    git = "http://github.com/" + git;
-                }
-                intentGit.setData(Uri.parse(git));
+                //intentGit.setData(Uri.parse(git));
                 itemGit.setIntent(intentGit);
-
                 startActivity(intentGit);
-                return false;
-            }
-        });
-
-
-        MenuItem deletar = menu.add(R.string.deletar);
-        deletar.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-
-
-                UsuarioDAO dao = new UsuarioDAO(ListaUsuariosActivity.this);
-                dao.deleta(usuario);
-                dao.close();
-
-                carregaLista();
                 return false;
             }
         });
