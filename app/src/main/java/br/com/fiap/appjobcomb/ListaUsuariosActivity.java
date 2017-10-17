@@ -91,6 +91,21 @@ public class ListaUsuariosActivity extends AppCompatActivity {
             }
         });
 
+        MenuItem deletar = menu.add("Deletar");
+        deletar.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+
+
+                UsuarioDAO dao = new UsuarioDAO(ListaUsuariosActivity.this);
+                dao.deleta(usuario);
+                dao.close();
+
+                carregaLista();
+                return false;
+            }
+        });
+
     }
 
 }
